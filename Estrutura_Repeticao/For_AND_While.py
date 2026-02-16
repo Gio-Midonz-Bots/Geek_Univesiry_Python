@@ -64,11 +64,14 @@ print(f"O fatorial final de {numero} é {resultado}")
 #1. Faça um programa que determine e mostre os cinco primeiros múltiplos de 3, considerando números
 #maiores que 0.
 #3, 6, 9, 12,15
-for i in range(0,16,3):
-    if i >= 3:
-        print(i)
-    else:
-        pass
+contador = 0
+indice = 1
+while contador < 5:
+    if indice % 3 == 0:
+        print(f'O multiplico de 3 é: {indice}')
+        contador += 1
+    indice += 1
+
 
 
 #2. Faça um programa que utilize o comando while para mostrar na tela uma contagem regressiva, iniciando
